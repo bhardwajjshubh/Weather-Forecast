@@ -29,7 +29,7 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerHTML = `-- Kmph`;
         document.querySelector(".weather-icon").src = "images/placeholder.png";
 
-        document.getElementById("weather-data").style.display = "block"; // Show the weather data even if there is an error
+        document.getElementById("weather-data").style.display = "none"; // Hide weather data on error
         document.getElementById("error-message").style.display = "block"; // Show error message
     }
 }
